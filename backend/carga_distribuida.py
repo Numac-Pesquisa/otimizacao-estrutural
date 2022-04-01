@@ -5,6 +5,8 @@ class CargaDistribuida():
         self._nome = nome
     def __str__(self) -> str:
         return(f"C{self._nome}={self._qx},{self._qy}")
+    def __repr__(self) -> str:
+        return(f"C{self._nome}={self._qx},{self._qy}")
     def set_barra_carga_distribuida(self,barra):
         self._barra=barra
     def get_barra_carga_distribuida(self):

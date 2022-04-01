@@ -5,6 +5,8 @@ class Seccao():
         self._nome = identificacao
     def __str__(self) -> str:
         return(f"{self._nome}, area={self._A}, inercia={self._I}")
+    def __repr__(self) -> str:
+        return(f"{self._nome}, area={self._A}, inercia={self._I}")
     def get_area(self):
         return(self._A)
     def get_inercia(self):

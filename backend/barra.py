@@ -12,6 +12,8 @@ class Barra():
         self._id = id
     def __str__(self) -> str: 
         return(f"Barra {self._id }[i({self._no_i}),f({self._no_f})]")
+    def __repr__(self) -> str:
+        return(f"Barra {self._id }[i({self._no_i}),f({self._no_f})]")
     def set_seccao(self,seccao:Seccao):
         self._seccao = seccao
     def set_material(self,material:Material):

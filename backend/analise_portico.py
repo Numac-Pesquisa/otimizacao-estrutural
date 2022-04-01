@@ -5,6 +5,8 @@ class AnalisePortico():
         self._barras = barras
     def __str__(self) -> str:
         pass
+    def __repr__(self) -> str:
+        pass
     def matriz_rigidez_desmembrada(self):
         n_colunas = self._barras[0].get_ke_local().shape[0]
         n_barras = int(len(self._barras))
